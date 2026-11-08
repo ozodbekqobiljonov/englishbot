@@ -4,7 +4,6 @@ from flask import Flask
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 
-
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
@@ -32,7 +31,7 @@ if __name__ == '__main__':
     t = threading.Thread(target=run_flask)
     t.start()
     
-    TOKEN = "9254081346:AAGdZzlPD_4ImqClg3GkCPH7joqAdqie8zk"
+    TOKEN = "9254081346:AAGdZz1PD_4ImqClg3GkCPH7joc-hTusJtY"
     
     application = ApplicationBuilder().token(TOKEN).build()
     application.add_handler(CommandHandler("start", start))
